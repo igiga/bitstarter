@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   fs.readFile('/index.html', function(err, databuf) {
       if (err) throw err;
   });
-  response.send(databug.toString());
+  response.send(databuf.toString());
 });
 
 var port = process.env.PORT || 5000;
